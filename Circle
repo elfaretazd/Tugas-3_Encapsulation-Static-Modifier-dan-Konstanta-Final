@@ -1,0 +1,39 @@
+package practik.geometry.shapes;
+
+public class Circle {
+    private int id;
+    private double radius;
+    private final int pembilang = 22;
+    private final int penyebut = 7;
+
+    // Konstruktor tanpa parameter
+    public Circle() {}
+
+    // Setter untuk id
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    // Setter untuk radius
+    public void setRadius(double radius) {
+        this.radius = radius;
+    }
+
+    // Getter untuk keliling
+    public double getKeliling() {
+        return (double) pembilang / penyebut * 2 * radius;
+    }
+
+    // Getter untuk luas
+    public double getLuas() {
+        return (double) pembilang / penyebut * radius * radius;
+    }
+
+    // Method untuk mencetak deskripsi
+    public void printDeskripsi() {
+        System.out.println("ID      : " + id);
+        System.out.println("Radius  : " + radius);
+        System.out.println("Keliling: " + getKeliling());
+        System.out.println("Luas    : " + getLuas());
+    }
+}
