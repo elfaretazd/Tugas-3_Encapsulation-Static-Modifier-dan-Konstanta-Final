@@ -1,0 +1,48 @@
+package practik.geometry.shapes;
+
+public class Rectangle {
+    private int id;
+    private double panjang;
+    private double lebar;
+
+    // Konstruktor dengan parameter
+    public Rectangle(int id, double panjang, double lebar) {
+        this.id = id;
+        this.panjang = panjang;
+        this.lebar = lebar;
+    }
+
+    // Getter untuk id
+    public int getId() {
+        return id;
+    }
+
+    // Getter untuk panjang
+    public double getPanjang() {
+        return panjang;
+    }
+
+    // Getter untuk lebar
+    public double getLebar() {
+        return lebar;
+    }
+
+    // Getter untuk keliling
+    public double getKeliling() {
+        return 2 * (panjang + lebar);
+    }
+
+    // Getter untuk luas
+    public double getLuas() {
+        return panjang * lebar;
+    }
+
+    // Method untuk mencetak deskripsi
+    public void printDeskripsi() {
+        System.out.println("ID      : " + id);
+        System.out.println("Panjang : " + panjang);
+        System.out.println("Lebar   : " + lebar);
+        System.out.println("Keliling: " + getKeliling());
+        System.out.println("Luas    : " + getLuas());
+    }
+}
